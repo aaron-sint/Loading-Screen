@@ -1,0 +1,113 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.loading{
+    max-width: 50%;
+    line-height: 1.4;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.loading__author{
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: rgba(189, 189, 189, 1);
+    margin: 0.6rem 0 2rem 0;
+    display: block;
+}
+
+.rainbow:hover{
+    animation: color 10s infinite ease-in-out;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+
+a:hover{
+    animation: color 8s infinite ease-in-out;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(189, 189, 189, 1);
+}
+
+.loading__animation{
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border: 5px solid rgba(189, 189, 189, 0.25);
+    border-right-color: rgba(3, 155, 229, 1);
+    border-bottom-color: rgba(3,155,229 ,1);
+    border-radius: 50%;
+    animation: rotate 0.80s infinite linear;
+}
+
+.animate-text{
+    position: relative;
+    white-space: nowrap;
+    animation: floatText 0.80s infinite alternate ease-in-out;
+}
+
+
+@keyframes rotate{
+    to{
+            transform: rotate(1turn)
+    }
+}
+
+@keyframes floatText{
+    from{
+        left: 0%;
+    }to{
+        left: 10%;
+    }
+}
+
+
+@keyframes color {
+    0% {
+      color: red; 
+    }
+    10% {
+      color: orange; 
+    }
+    20% {
+      color: yellow;  
+    }
+    30% {
+      color: Chartreuse;  
+    }
+    40% {
+      color: cyan; 
+    }
+    50% {
+      color: blue; 
+    }
+    60% {
+      color: DarkOrchid;  
+    }
+    70% {
+      color: DeepPink;
+    }
+    80% {
+      color: red; 
+    }
+    90% {
+      color: red; 
+    }
+    100% {
+      color: red;
+    }
+  }
+
